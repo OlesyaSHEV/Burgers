@@ -1113,9 +1113,9 @@ transition: .3s;
     @include tablets{
         display: flex;
     }
-
  
 }
+
 .hamburger-menu-link-line{
     background: #fff;
     width: 24px;
@@ -1145,7 +1145,33 @@ transition: .3s;
     } 
    
 }
-
+.humburger-menu{
+    position: absolute;
+    display:none;
+    background: rgba(47, 50, 52, 0.95);
+    align-items: center;
+    justify-content: center;
+    transition: opacity .3s;
+}
+.humburger-menu.humburger-menu-active{
+    display: flex;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    bottom: 0;
+    top: 0;
+   
+}
+.nav{
+    display: block;
+}
+.nav--list{
+    text-align: center;
+    width: 100%;
+}
+.nav--list.nav_hum{
+    flex-direction: column; 
+}
 
 
 .nav-menu{
